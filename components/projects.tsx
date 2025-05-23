@@ -26,6 +26,15 @@ const projects = [
     type: "Web App",
   },
   {
+    title: "Personal Portofolio",
+    description:
+    "This personal portfolio website showcases my profile, skills, and top projects with a modern, responsive design as a professional representation in the tech field.",
+    image: "/Images/cover_porto.png",
+    tags: ["React"],
+    githubLink: "https://github.com/derika-dev/Personal-Portofolio.git",
+    type: "Web App",
+  },
+  {
     title: "Beautiful Culture",
     description:
     "Websites as information technology",
@@ -34,21 +43,11 @@ const projects = [
     type: "Web Design",
   },
   {
-    title: "Personal Portofolio",
-    description:
-    "This personal portfolio website showcases my profile, skills, and top projects with a modern, responsive design as a professional representation in the tech field.",
-    image: "/Images/cover_porto.png",
-    tags: ["React"],
-    githubLink: "#",
-    type: "Web App",
-  },
-  {
     title: "SafeZone",
     description:
     "Bullying reporting and school monitoring app for a safe learning environment.",
     image: "/Images/cover_safezone.png",
     tags: ["Figma"],
-    githubLink: "#",
     type: "UI/UX Design",
   },
   {
@@ -57,7 +56,6 @@ const projects = [
     "The app simplifies travel planning and booking for all groups, including tickets, hotels, and attractions.",
     image: "/Images/cover_trevelease.png",
     tags: ["Figma"],
-    githubLink: "#",
     type: "UI/UX Design",
   },
 ]
@@ -128,17 +126,20 @@ export default function Projects() {
                   </CardContent>
 
                   <CardFooter className="pt-4 mt-auto">
-                    <div className="flex gap-3 w-full">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="flex-1 border-navy-600 text-gray-200 hover:bg-navy-700 hover:text-white"
+                  <div className="flex gap-3 w-full">
+                    {project.githubLink && (
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 inline-flex items-center justify-center border border-navy-600 text-gray-200 hover:bg-navy-700 hover:text-white bg-navy-900 rounded-md px-4 py-2 text-sm font-medium transition-colors duration-200"
                       >
                         <Github className="h-4 w-4 mr-2" />
                         Code
-                      </Button>
-                    </div>
-                  </CardFooter>
+                      </a>
+                    )}
+                  </div>
+                </CardFooter>
                 </div>
               </Card>
             </motion.div>
