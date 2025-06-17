@@ -52,11 +52,11 @@ export default function Hero() {
             </h1>
 
             <h2 className="text-xl md:text-2xl text-gray-300 mb-6">
-              Front-End Developer crafting beautiful digital experiences
+              Web Developer crafting seamless digital experiences
             </h2>
 
             <p className="text-gray-400 mb-8 max-w-lg mx-auto lg:mx-0">
-              I build responsive, user-friendly websites and applications with modern technologies.
+               I specialize in building responsive, user-friendly websites and applications — from designing intuitive interfaces to developing robust back-end systems using modern technologies.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
