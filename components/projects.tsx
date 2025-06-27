@@ -26,6 +26,15 @@ const projects = [
     type: "Web App",
   },
   {
+    title: "e-Recruitment System",
+    description:
+    "This web-based recruitment system is developed using Laravel 12 and MySQL, designed to simplify and accelerate the digital hiring process.",
+    image: "/Images/cover.png",
+    tags: ["React", "MySQL", "Laravel"],
+    githubLink: "https://github.com/derika-dev/eRecruitment-Laravel.git",
+    type: "Web App",
+  },
+  {
     title: "Personal Portofolio",
     description:
     "This personal portfolio website showcases my profile, skills, and top projects with a modern, responsive design as a professional representation in the tech field.",
